@@ -1,0 +1,196 @@
+
+.contact-body-content{
+       padding: 100px 0;
+       border-bottom: 1px solid rgba(168, 168, 168, 0.447);
+}
+.contact-intro{
+        text-align: center;
+        margin: 30px 0;
+}
+.contact-intro h3{
+    font-size: 40px;
+    font-family: var(--font-bold);
+}
+.contact-intro h1{
+    background: -webkit-linear-gradient(#0086d8,#53b5f3, #53b5f3, #e149bd,#e149bd, #eaa800, #eebc25e8, #eebc256d);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   font-size: 65px;
+   font-family: var(--font-bold);
+}
+
+.contact-body-row{
+      width: 1100px;
+      margin: 60px auto;
+      background: #0020369d;
+      display: grid;
+      grid-template-columns: 1.6fr 3fr;
+      gap: 40px;
+      padding: 30px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+
+.contact-details{
+      padding: 30px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      background: #0e87b75c;
+      height: max-content;
+}
+.contact-details h4{
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+}
+.contact-details p.intro{
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 25px;
+      margin-bottom: 20px;
+}
+
+.contact-details .detail-moja{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 10px
+}
+.detail-moja span{
+     width: 40px;
+     flex-shrink: 0;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 40px;
+     -webkit-border-radius: 40px;
+     -moz-border-radius: 40px;
+     -ms-border-radius: 40px;
+     -o-border-radius: 40px;
+     color: var(--main-color);
+     background: white;
+}
+.detail-moja p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.contact-form{
+    width: 95%;
+}
+.form-row{
+    margin-bottom: 30px;
+}
+.form-row.split{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 30px;
+}
+.form-row label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.form-row label span{
+    color: red;
+}
+.form-row .form-control{
+       width: 100%;
+       height: 50px;
+       border: none;
+       border-bottom: 1px solid rgba(163, 163, 163, 0.5);
+       background: transparent;
+       outline: none;
+       font-family: var(--font-regular);
+       color: white;
+       padding-left: 10px;
+       font-size: 16px;
+       font-weight: 200;
+}
+.form-row .form-control:focus,
+.form-row textarea:focus{
+       background: rgba(29, 61, 83, 0.274);
+}
+.form-row .form-control.select:focus{
+       background: rgba(29, 61, 83, 0.905);
+}
+.form-row textarea{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.5);
+    background: transparent;
+    outline: none;
+    font-family: var(--font-regular);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+.form-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.form-btn button{
+      width: 180px;
+      height: 55px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      font-family: var(--font-regular);
+      font-weight: 400;
+      border: none;
+      background: var(--main-color);
+      color: whitesmoke;
+      cursor: pointer;;
+}
+
+.office-map-wrapper iframe{
+       width: 100%;;
+       border: none;
+}
+.office-map-wrapper h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media(max-width: 1200px){
+        .contact-body-row{
+              width: 90%;
+        }
+}
+@media(max-width: 1090px){
+       .contact-body-row{
+           grid-template-columns: 1fr;
+       }
+}
+@media(max-width: 768px){
+      .contact-body-row{
+           width: 100%;
+      }
+}
