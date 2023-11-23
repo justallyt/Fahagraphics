@@ -6,7 +6,6 @@ import { CgMenuRightAlt } from "react-icons/cg"
 import Dropdown from "./Dropdown"
 import { useContext, useState } from "react"
 import { navContext } from "./navcontext"
-import Dropdown2 from "./Dropdown2"
 const Header = () => {
     const [dropdown, setDropdown] = useState(false)
    const [mobileStatus, setMobileStatus] = useContext(navContext);
@@ -22,14 +21,14 @@ const Header = () => {
                                                  </NavLink>
                                        </div>
                                        <nav>
-                                                <ul>
-                                                           <li><NavLink to={'/'}>Home</NavLink></li>
-                                                           <li><NavLink to={'/about-us/'}>About Us</NavLink></li>
-                                                           <li><NavLink to={'/services/'}>Services</NavLink></li>
-                                                           <li onMouseOver={() => setDropdown(true)} onMouseOut={() => setDropdown(false)}><NavLink to={'/products/'} className={dropdown ? "active" : ''}>Products <span><LiaAngleDownSolid /></span></NavLink>
+                                                <ul className="main-list">
+                                                           <li className="main-list-item"><NavLink to={'/'} className='menu-item'>Home</NavLink></li>
+                                                           <li className="main-list-item"><NavLink to={'/about-us/'} className='menu-item'>About Us</NavLink></li>
+                                                           <li className="main-list-item"><NavLink to={'/services/'} className='menu-item'>Services</NavLink></li>
+                                                           <li className="main-list-item" onMouseOver={() => setDropdown(true)} onMouseOut={() => setDropdown(false)}><NavLink to={'/products/'} className={dropdown ? "menu-item active" : 'menu-item'}>Products <span className="drop"><LiaAngleDownSolid /></span></NavLink>
                                                                        <Dropdown status={dropdown}  />
                                                            </li>
-                                                           <li><NavLink to={'/contact-us/'}>Contact Us</NavLink></li>
+                                                           <li className="main-list-item"><NavLink to={'/contact-us/'} className='menu-item'>Contact Us</NavLink></li>
                                                 </ul>
                                        </nav>
                                        <div className="header-btns">
