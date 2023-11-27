@@ -25,7 +25,7 @@ const Header = () => {
                                                            <li className="main-list-item"><NavLink to={'/'} className='menu-item'>Home</NavLink></li>
                                                            <li className="main-list-item"><NavLink to={'/about-us/'} className='menu-item'>About Us</NavLink></li>
                                                            <li className="main-list-item"><NavLink to={'/services/'} className='menu-item'>Services</NavLink></li>
-                                                           <li className="main-list-item" onMouseOver={() => setDropdown(true)} onMouseOut={() => setDropdown(false)}><NavLink to={'/products/'} className={dropdown ? "menu-item active" : 'menu-item'}>Products <span className="drop"><LiaAngleDownSolid /></span></NavLink>
+                                                           <li className="main-list-item" onMouseOver={() => setDropdown(true)} onMouseOut={() => setDropdown(false)}><NavLink to={'/products/'} className={dropdown ? "menu-item active" : 'menu-item'}>Products <span className={dropdown ? "drop active" : "drop"}><LiaAngleDownSolid /></span></NavLink>
                                                                        <Dropdown status={dropdown}  />
                                                            </li>
                                                            <li className="main-list-item"><NavLink to={'/contact-us/'} className='menu-item'>Contact Us</NavLink></li>

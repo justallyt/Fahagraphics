@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Services from "./pages/Services"
+import Products from "./pages/Products"
 function App() {
   const location = useLocation()
 
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us/" element={<About />} />
                 <Route path="/services/" element={<Services />} />
+                <Route path="/products/" element={<Products />} />
                 <Route path="/contact-us/" element={<Contact />} />
     </Routes>
   )

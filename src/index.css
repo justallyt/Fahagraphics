@@ -10,7 +10,7 @@
      --font-regular: 'Plus Jakarta Sans';
      --font-bold: "Fontspring-Semibold";
      --main-color: #ffb700;
-     --border-radi: 6px;
+     --border-radius: 6px;
      --whitish: rgb(251, 249, 249);
 }
 
@@ -84,8 +84,20 @@ header .logo img{
       line-height: 85px;
 }
 .header-content nav ul.main-list li.main-list-item span.drop{
-      display: flex;
-      margin: 35px 0px 0px 3px;
+      display: inline-flex;
+      margin: 35px 0px 32px 3px;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+}
+.header-content nav ul.main-list li.main-list-item span.drop.active{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
 }
 .header-content nav ul li a.menu-item{
        color: white;
@@ -128,11 +140,11 @@ header .logo img{
        justify-content: center;
        align-items: center;
        font-size: 15px;
-       border-radius: var(--border-radi);
-       -webkit-border-radius: var(--border-radi);
-       -moz-border-radius: var(--border-radi);
-       -ms-border-radius: var(--border-radi);
-       -o-border-radius: var(--border-radi);
+       border-radius: var(--border-radius);
+       -webkit-border-radius: var(--border-radius);
+       -moz-border-radius: var(--border-radius);
+       -ms-border-radius: var(--border-radius);
+       -o-border-radius: var(--border-radius);
        color: var(--whitish);
 }
 .header-content .action-btn button span{
