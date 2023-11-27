@@ -10,7 +10,7 @@ const Dropdown = ({ status }) => {
     }
     
   return (
-    <div className={ status ? "dropdown active" : "dropdown active"}>
+    <div className={ status ? "dropdown active" : "dropdown"}>
                <div className="dropdown-shifts">
                          <ul>
                                    <li className={active === 0 ? "dropdown-list-item active" : "dropdown-list-item"} onMouseOver={() => changeContainer(0)}>Printing Inks</li>

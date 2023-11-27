@@ -2,26 +2,28 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import { useEffect, useRef } from "react";
+
 const MobileDropdown = ({ status }) => {
-    const dropRef = useRef();
+    const dropdownRef = useRef();
 
     useEffect(() => {
-               if(dropRef){
-                      const items = dropRef.current.querySelectorAll('.mobile-dropdown-moja');
-
-                      for(let i = 0; i < items.length; i++){
-                              items[i].querySelector('.dropdown-header span').addEventListener('click', () => {
-                                       items[i].querySelector('.dropdown-body').classList.toggle('active') 
-                              })
-                      }
-               }
-    }, [])
+             const dropdowns = dropdownRef.current.querySelectorAll('.mobile-dropdown-moja')
+            
+             dropdowns.forEach(item => {
+                     const item_click = item.querySelector('.dropdown-header span')
+                     const item_body = item.querySelector('.dropdown-body')
+                     
+                     item_click.addEventListener('click', () => {
+                             item_body.classList.toggle('active')
+                     })
+             })
+    })
   return (
-    <div ref={dropRef}  className={status ? 'mobile-dropdown active' : 'mobile-dropdown'}>
+    <div  className={status ? 'mobile-dropdown active' : 'mobile-dropdown'} ref={dropdownRef}>
                 <div className="mobile-dropdown-moja">
                              <div className="dropdown-header">
                                        <h4>Printing Inks</h4>
-                                       <span><AiOutlinePlus /></span>
+                                       <span className="first"><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
                                               <NavLink to={'/offset-printing'} className="cont-drop-title">Offset Printing Inks</NavLink>
@@ -123,7 +125,43 @@ const MobileDropdown = ({ status }) => {
                                        <span><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
-                                       
+                                        <div className="subcategory-row">
+                                                      <div className="subcategory">
+                                                                <h5>Press Washes</h5>
+                                                                <ul>
+                                                                           <li><NavLink to={'/ss'}><span><HiOutlineArrowRight /></span>Atece Galaxy Wash</NavLink></li>
+                                                                </ul>
+                                                     </div>
+                                                        <div className="subcategory">
+                                                                   <h5>Fountain Solutions</h5>
+                                                                   <ul>
+                                                                              <li><NavLink to={'/ss'}><span><HiOutlineArrowRight /></span>Atece Galaxy Fountain Solution</NavLink></li>
+                                                                              <li><NavLink to={'/shds'}><span><HiOutlineArrowRight /></span>Atece Galaxy Web Fountain Solution</NavLink></li>
+                                                                   </ul>
+                                                        </div>
+                                                        <div className="subcategory">
+                                                                   <h5>Press Additives</h5>
+                                                                   <ul>
+                                                                              <li><NavLink to={'/ss'}><span><HiOutlineArrowRight /></span>Ink Reducer</NavLink></li>
+                                                                              <li><NavLink to={'/shds'}><span><HiOutlineArrowRight /></span>Spray Powder</NavLink></li>
+                                                                              <li><NavLink to={'/shds'}><span><HiOutlineArrowRight /></span>Blanket Repair Kit</NavLink></li>
+                                                                   </ul>
+                                                        </div>
+                                                        <div className="subcategory">
+                                                                   <h5>Plate Cleaners</h5>
+                                                                   <ul>
+                                                                              <li><NavLink to={'/ss'}><span><HiOutlineArrowRight /></span>Atece Galaxy Plate Cleaner</NavLink></li>
+                                                                              <li><NavLink to={'/shds'}><span><HiOutlineArrowRight /></span>Atece Galaxy Plate Gum</NavLink></li>
+                                                                   </ul>
+                                                        </div>
+                                                        <div className="subcategory">
+                                                                   <h5>Specialty Washes</h5>
+                                                                   <ul>
+                                                                              <li><NavLink to={'/ss'}><span><HiOutlineArrowRight /></span>UV Roller Wash</NavLink></li>
+                                                                 
+                                                                   </ul>
+                                                        </div>
+                                             </div>
                              </div>
                 </div>
                 <div className="mobile-dropdown-moja">
@@ -132,7 +170,59 @@ const MobileDropdown = ({ status }) => {
                                        <span><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
-                                       
+                                        <div className="subcategory-row">
+                                                  <div className="subcategory">
+                                                               <h5>Banner Materials</h5>
+                                                               <ul>
+                                                                       <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Black and White Banner</NavLink></li>
+                                                                       <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Honeycomb Banner</NavLink></li>
+                                                                       <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Frontlit White Banner</NavLink></li>
+                                                              </ul>
+                                                  </div>     
+                                                   <div className="subcategory">
+                                                              <h5>Vinyl</h5>
+                                                               <ul>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> White Vinyl</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Clear Vinyl</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> One Way Vision</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Reflective Vinyl</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Grey Back Pet</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Honeycomb Vinyl</NavLink></li>
+                                                               </ul>
+                                                   </div>
+
+                                                  <div className="subcategory">
+                                                                 <h5>Boards</h5>
+                                                                 <ul>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Corex Boards</NavLink></li>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Forex Boards</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Aluco Bond Panels</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Acryllic Sheet</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> ABS Boards</NavLink></li>
+                                                               </ul>
+                                                  </div>
+
+                                                  <div className="subcategory">
+                                                                 <h5>Stands</h5>
+                                                                 <ul>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Telescopic Portable Banner Stands</NavLink></li>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Broadbase Banner Stands</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Door Frame</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> X Stand</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Media Banner</NavLink></li>
+                                                               </ul>
+                                               </div>
+                                               <div className="subcategory">
+                                                                 <h5>Snapper Frame</h5>
+                                                                 <ul>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Snapper Frame A0</NavLink></li>
+                                                                    <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Snapper Frame A1</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Snapper Frame A2</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Snapper Frame A3</NavLink></li>
+                                                                        <li><NavLink to={'/sd'}><span><HiOutlineArrowRight /></span> Snapper Frame A4</NavLink></li>
+                                                               </ul>
+                                               </div>
+                                          </div>
                              </div>
                 </div>
                 <div className="mobile-dropdown-moja">
@@ -141,7 +231,16 @@ const MobileDropdown = ({ status }) => {
                                        <span><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
-                                       
+                                        <div className="subcategory">
+                                                  <h5>Paper</h5>
+                                                  <ul>
+                                                          <li><NavLink to={'/dfs'}><span><HiOutlineArrowRight /></span>Self Adhesive Vinyl Paper</NavLink></li>
+                                                          <li><NavLink to={'/dfs'}><span><HiOutlineArrowRight /></span>Art Paper Gloss</NavLink></li>
+                                                          <li><NavLink to={'/dfsd'}><span><HiOutlineArrowRight /></span>Art Paper Matt</NavLink></li>
+                                                          <li><NavLink to={'/dsf'}><span><HiOutlineArrowRight /></span>NCR Paper</NavLink></li>
+                                                          <li><NavLink to={'/dfs'}><span><HiOutlineArrowRight /></span>Bond Paper</NavLink></li>
+                                                 </ul>
+                                           </div>
                              </div>
                 </div>
     </div>

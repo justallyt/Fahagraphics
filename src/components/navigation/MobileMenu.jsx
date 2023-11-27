@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import { CgClose } from "react-icons/cg"
 import { AiOutlinePlus } from "react-icons/ai";
@@ -25,42 +25,42 @@ const MobileMenu = () => {
             if(menuStatus){
                     wrapperRef.current.classList.add("active")
 
-                    //let tl = gsap.timeline();
+                    let tl = gsap.timeline();
 
-                  //   tl.to(overlayRef.current, {
-                  //           y: 0,
-                  //           clipPath: "circle(100% at center)",
-                  //           duration: 0.5
-                  //    })
-                  //    tl.to(wrapperRef.current.querySelector(".logo"), {
-                  //          x: 0,
-                  //          duration: 0.5,
-                  //          opacity: 1,
-                  //    })
-                  //    tl.to(wrapperRef.current.querySelector(".closebtn"), {
-                  //            x: 0,
-                  //            duration: 0.5,
-                  //            opacity: 1
-                  //    })
-                  //    linksWrap.current.querySelectorAll(".list-item").forEach(item => {
-                  //          tl.to(item, {
-                  //                opacity: 1,
-                  //                y: 0,
-                  //                duration: 0.3
-                  //          })
-                  //    })
-                  //    tl.to(btnRef.current, {
-                  //         opacity: 1, 
-                  //         y: 0,
-                  //         duration: 0.5
-                  //    })
-                  //    socialsRef.current.querySelectorAll("li").forEach(item => {
-                  //           tl.to(item, {
-                  //                    opacity: 1,
-                  //                    y: 0,
-                  //                    duration: 0.4
-                  //           })
-                  //    })
+                    tl.to(overlayRef.current, {
+                            y: 0,
+                            clipPath: "circle(100% at center)",
+                            duration: 0.5
+                     })
+                     tl.to(wrapperRef.current.querySelector(".logo"), {
+                           x: 0,
+                           duration: 0.5,
+                           opacity: 1,
+                     })
+                     tl.to(wrapperRef.current.querySelector(".closebtn"), {
+                             x: 0,
+                             duration: 0.5,
+                             opacity: 1
+                     })
+                     linksWrap.current.querySelectorAll(".list-item").forEach(item => {
+                           tl.to(item, {
+                                 opacity: 1,
+                                 y: 0,
+                                 duration: 0.3
+                           })
+                     })
+                     tl.to(btnRef.current, {
+                          opacity: 1, 
+                          y: 0,
+                          duration: 0.5
+                     })
+                     socialsRef.current.querySelectorAll("li").forEach(item => {
+                            tl.to(item, {
+                                     opacity: 1,
+                                     y: 0,
+                                     duration: 0.4
+                            })
+                     })
             }
 
             if(!menuStatus && wrapperRef.current.classList.contains("active")){
@@ -128,7 +128,7 @@ const MobileMenu = () => {
                                                            <li className="list-item"><NavLink to={'/'}>Home</NavLink></li>
                                                            <li className="list-item"><NavLink to={'/about-us/'}>About Us</NavLink></li>
                                                            <li className="list-item"><NavLink to={'/services/'}>Services</NavLink></li>
-                                                           <li className={dropdown ? "special list-item" : 'list-item'}><NavLink className={dropdown ? 'active' : ''} to={'#'}><span  onClick={handleParentDrop}>Products</span>  <span  onClick={handleParentDrop}><AiOutlinePlus /></span></NavLink>
+                                                           <li className={dropdown ? "special list-item" : 'list-item'}><Link className={dropdown ? 'active' : ''} to={'#'}><span  onClick={handleParentDrop}>Products</span>  <span  onClick={handleParentDrop}><AiOutlinePlus /></span></Link>
                                                                      {/* <Dropdown status={dropdown} /> */}
                                                                      <MobileDropdown status={dropdown} />
                                                            </li>

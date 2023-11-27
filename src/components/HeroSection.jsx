@@ -9,15 +9,10 @@ const HeroSection = () => {
    const heading = useRef()
    const copy  = useRef()
    const btn = useRef()
-  const lion = useRef()
-
+   
   useLayoutEffect(() => {
             let tl = gsap.timeline()
 
-            tl.to(lion.current, {
-                    transform: "scale(1)",
-                    duration: 1
-            })
             tl.to(heading.current, {
                     opacity: 1,
                     y: 0,
