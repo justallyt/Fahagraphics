@@ -1,29 +1,17 @@
-import { AiOutlinePlus } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
-import { HiOutlineArrowRight } from "react-icons/hi2";
-import { useEffect, useRef } from "react";
+
+import { menuData } from "../../data/menu_data";
+import MobileDropdownMoja from "./MobileDropdownMoja";
 
 const MobileDropdown = ({ status }) => {
-    const dropdownRef = useRef();
-
-    useEffect(() => {
-             const dropdowns = dropdownRef.current.querySelectorAll('.mobile-dropdown-moja')
-            
-             dropdowns.forEach(item => {
-                     const item_click = item.querySelector('.dropdown-header span')
-                     const item_body = item.querySelector('.dropdown-body')
-                     
-                     item_click.addEventListener('click', () => {
-                             item_body.classList.toggle('active')
-                     })
-             })
-    })
   return (
-    <div  className={status ? 'mobile-dropdown active' : 'mobile-dropdown'} ref={dropdownRef}>
-                <div className="mobile-dropdown-moja">
+    <div  className={status ? 'mobile-dropdown active' : 'mobile-dropdown'}>
+                { menuData && menuData.map(dropdownMoja => 
+                        <MobileDropdownMoja key={dropdownMoja.id} data={dropdownMoja} />
+                 )}
+                {/* <div className="mobile-dropdown-moja"> 
                              <div className="dropdown-header">
                                        <h4>Printing Inks</h4>
-                                       <span className="first"><AiOutlinePlus /></span>
+                                       <span><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
                                               <NavLink to={'/offset-printing'} className="cont-drop-title">Offset Printing Inks</NavLink>
@@ -85,7 +73,7 @@ const MobileDropdown = ({ status }) => {
                                        <span><AiOutlinePlus /></span>
                              </div>
                              <div className="dropdown-body">
-                             <NavLink to={'/printing-blankets'} className='cont-drop-title'>Printing Blankets</NavLink>
+                                           <NavLink to={'/printing-blankets'} className='cont-drop-title'>Printing Blankets</NavLink>
                                               <div className="subcategory">
                                                         <ul>
                                                                 <li><NavLink to={'/dsfd'}><span><HiOutlineArrowRight /></span> Kinyo Printing Blankets</NavLink></li>
@@ -242,7 +230,7 @@ const MobileDropdown = ({ status }) => {
                                                  </ul>
                                            </div>
                              </div>
-                </div>
+                </div> */}
     </div>
   )
 }

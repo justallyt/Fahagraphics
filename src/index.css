@@ -632,6 +632,9 @@ header .logo img{
              font-weight: 300;
              font-size: 15px;
      }
+     .dropdown-header span{
+           cursor: pointer;
+     }
      .dropdown-body{
            transform: scale(0);
            -webkit-transform: scale(0);
@@ -660,7 +663,7 @@ header .logo img{
            margin-top: 0px;
      }
      .dropdown-body .subcategory h5{
-           font-size: 12px
+           font-size: 12px;
      }
     .dropdown-body ul li{
           line-height: 2;

@@ -42,7 +42,8 @@
       margin-bottom: 20px;
 }
 .single-filter-header,
-.single-filter-body .sub-filter-header{
+.single-filter-body .sub-filter-header,
+.mini-filter-header{
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -61,7 +62,8 @@
     -o-transition: all 0.5s ease;
 }
 .single-filter-header:hover,
-.sub-filter-header:hover{
+.sub-filter-header:hover,
+.mini-filter-header:hover{
       background: #00487445;
 }
 .single-filter-header h4{
@@ -99,7 +101,8 @@
     -o-transform: rotate(90deg);
 }
 
-.single-filter-body{
+.single-filter-body,
+.sub-filter-body{
        margin: 0px 15px;
 }
 
@@ -108,14 +111,15 @@
       font-size: 14px;
 }
 
-.single-filter-body{
+.single-filter-body,
+.sub-filter-body{
       position: absolute;
       visibility: hidden;
-      transform:scale(0);
-      -webkit-transform:scale(0);
-      -moz-transform:scale(0);
-      -ms-transform:scale(0);
-      -o-transform:scale(0);
+      transform:scaleY(0);
+      -webkit-transform:scaleY(0);
+      -moz-transform:scaleY(0);
+      -ms-transform:scaleY(0);
+      -o-transform:scaleY(0);
       transform-origin: top;
       transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
@@ -124,12 +128,18 @@
       -o-transition: all 0.5s ease;
 }
 
-.single-filter-body.show{
-      position: relative;
-      visibility: visible;
-       transform: scale(1);
-       -webkit-transform: scale(1);
-       -moz-transform: scale(1);
-       -ms-transform: scale(1);
-       -o-transform: scale(1);
+.single-filter-body.show,
+.sub-filter-body.show{
+       position: relative;
+       visibility: visible;
+       transform: scaleY(1);
+       -webkit-transform: scaleY(1);
+       -moz-transform: scaleY(1);
+       -ms-transform: scaleY(1);
+       -o-transform: scaleY(1);
+}
+
+.mini-filter-header h4{
+      font-size: 12px;
+      font-weight: 400;
 }
