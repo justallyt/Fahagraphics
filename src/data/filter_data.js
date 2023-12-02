@@ -101,7 +101,7 @@ export const filterData = [
        },
        {
         id: 3,
-        header_text: 'Larg Format',
+        header_text: 'Large Format',
         subfilters: [
                {
                    id: 'yhumkd4',

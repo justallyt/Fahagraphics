@@ -18,7 +18,7 @@
 }
 
 .all-products-section{
-      padding: 60px 0;
+      padding: 60px 0 100px 0;
       background: rgb(0, 6, 10);
 }
 .all-products-section .inner-row{
@@ -28,7 +28,6 @@
        display: grid;
        grid-template-columns: 1fr 3.3fr;
        gap: 20px;
-       border: 1px solid;
 }
 
 .filters-wrapper{
@@ -158,7 +157,7 @@
 
 /* Products Body */
 .products-body{
-       padding:0px 10px;
+       padding:0px 20px;
 }
 .products-body-content .search-bar-area{
         width: 400px;
@@ -199,7 +198,95 @@
        display: grid;
        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
        gap: 20px;
+       margin-top: 30px;
 }
 .product-moja{
-      
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.8s ease;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      padding-bottom: 20px;
+}
+.product-moja:hover{
+       background: rgba(83, 123, 154, 0.1);
+       transform: scale(0.95);
+       -webkit-transform: scale(0.95);
+       -moz-transform: scale(0.95);
+       -ms-transform: scale(0.95);
+       -o-transform: scale(0.95);
+}
+.product-moja img{
+      height: 350px;
+      object-fit: cover;
+}
+
+.product-moja h3{
+        margin: 10px 0px 5px 0;
+        font-weight: 300;
+        font-size: 16px;
+}
+.product-moja .categories span{
+       font-size: 12px;
+       font-weight: 100;
+       padding: 6px 15px 8px;
+       border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+       background:rgba(83, 123, 154, 0.3)
+}
+.product-moja .categories{
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 10px;
+}
+.product-moja a{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      color:rgb(235, 235, 235);
+      background: var(--main-color);
+      padding: 10px 30px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      transform: translateY(30px);
+      -webkit-transform: translateY(30px);
+      -moz-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+      -o-transform: translateY(30px);
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+}
+.product-moja:hover a{
+      opacity: 1;
+       transform: translate(0);
+       -webkit-transform: translate(0);
+       -moz-transform: translate(0);
+       -ms-transform: translate(0);
+       -o-transform: translate(0);
+}
+.product-moja a span{
+       display: flex;
+       margin-top: 3px;
 }

@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { filterData } from "../data/filter_data";
 import SingleFilter from "./SingleFilter";
+import { productsContext } from "../context";
 const Filters = () => {
+  const [data, setData] = useContext(productsContext)
 
+  console.log(data)
   return (
     <div className="filters-wrapper">
               <div className="filters-wrapper-content">

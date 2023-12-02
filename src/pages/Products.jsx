@@ -1,6 +1,7 @@
 import AllProducts from "../components/AllProducts"
 import Navbar from "../components/navigation/Navbar"
 import "../css/products.css"
+import Footer from "../components/Footer"
 const Products = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Products = () => {
                    </div>
           </div>
           <AllProducts />
+          <Footer />
     </>
   )
 }
