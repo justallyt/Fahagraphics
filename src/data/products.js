@@ -3,6 +3,7 @@ export const products = [
           id: 0,
           title: 'Solvent Printing Inks',
           main_category: 'Printing Inks',
+          subcategory: 'Solvent Printing Inks',
           product_description: '',
           link: '/product/printing-inks/solvent-printing-inks',
           main_image: '/products/printingInks/solventPrintingInks/image2.jpg',
@@ -12,6 +13,7 @@ export const products = [
         id: 1,
         title: 'Varnishes',
         main_category: 'Printing Inks',
+        subcategory: 'Varnishes',
         product_description: '',
         link: '/product/printing-inks/varnishes',
         main_image: '/products/printingInks/varnishes/image1.jpg',
@@ -21,6 +23,7 @@ export const products = [
     id: 2,
     title: 'Vehicles Spray',
     main_category: 'Printing Inks',
+    subcategory: 'Vehicle Spray',
     product_description: '',
     link: '/product/printing-inks/vehiclespray',
     main_image: '/products/printingInks/vehiclespray/image1.jpg',
@@ -127,6 +130,7 @@ export const products = [
     title: 'Printing Blankets',
     main_category: 'Printing Ink Consumables',
     product_description: '',
+    subcategory: 'Printing Blankets',
     link: '/product/printing-ink-consumables/printing-blankets',
     main_image: '/products/printconsumables/printingblankets/image1.jpg',
     product_images: ['/products/printconsumables/printingblankets/image2.jpg']
@@ -136,6 +140,7 @@ export const products = [
     title: 'Printing Plates',
     main_category: 'Printing Ink Consumables',
     product_description: '',
+    subcategory: 'Printing Plates',
     link: '/product/printing-ink-consumables/printing-plates',
     main_image: '/products/printconsumables/printingplates/image2.jpg',
     product_images: ['/products/printconsumables/printingplates/image1.jpg', '/products/printconsumables/printingplates/image3.jpg', '/products/printconsumables/printingplates/image4.jpg']
@@ -144,6 +149,7 @@ export const products = [
     id: 14,
     title: 'Lamination Films',
     main_category: 'Printing Ink Consumables',
+    subcategory: 'Lamination Films',
     product_description: '',
     link: '/product/printing-ink-consumables/lamination-films',
     main_image: '/products/printconsumables/lamination/image1.jpg',
@@ -154,6 +160,7 @@ export const products = [
     title: 'Doctor Blades',
     main_category: 'Printing Ink Consumables',
     product_description: '',
+    subcategory: 'Doctor Blades',
     link: '/product/printing-ink-consumables/doctor-blades',
     main_image: '/products/printconsumables/doctorblades/image3.jpg',
     product_images: ['/products/printconsumables/doctorblades/image1.jpg', '/products/printconsumables/doctorblades/image2.jpg']
@@ -163,6 +170,7 @@ export const products = [
     title: 'Press Washes',
     main_category: 'Pressroom Chemicals',
     product_description: '',
+    subcategory: 'Press Washes',
     link: '/product/pressroom-chemicals/press-washes',
     main_image: '/products/pressroomchemicals/washes/image1.jpg',
     product_images: []
@@ -172,6 +180,7 @@ export const products = [
      title: 'Press Additives',
      main_category: 'Pressroom Chemicals',
      product_description: '',
+     subcategory: 'Press Additives',
      link: '/product/pressroom-chemicals/press-additives',
      main_image: '/products/pressroomchemicals/additives/ink/image1.jpg',
      product_images: ['/products/pressroomchemicals/additives/blanket/image1.jpg', '/products/pressroomchemicals/additives/spray/image1.jpg']
@@ -181,6 +190,7 @@ export const products = [
     title: 'Fountain Solutions',
     main_category: 'Pressroom Chemicals',
     product_description: '',
+    subcategory: 'Fountain Solutions',
     link: '/product/pressroom-chemicals/fountain-solutions',
     main_image: '/products/pressroomchemicals/fountains/image1.jpg',
     product_images: ['/products/pressroomchemicals/fountains/image2.jpg']
@@ -190,6 +200,7 @@ export const products = [
     title: 'Plate Cleaners',
     main_category: 'Pressroom Chemicals',
     product_description: '',
+    subcategory: 'Plate Cleaners',
     link: '/product/pressroom-chemicals/platecleaners',
     main_image: '/products/pressroomchemicals/platecleaners/image1.jpg',
     product_images: ['/products/pressroomchemicals/platecleaners/image2.jpg', '/products/pressroomchemicals/platecleaners/image3.jpg']
@@ -199,6 +210,7 @@ export const products = [
     title: 'Banner Materials',
     main_category: 'Large Format',
     product_description: '',
+    subcategory: 'Banner Materials',
     link: '/product/large-format/bannermaterials',
     main_image: '/products/largeformat/bannermaterials/image1.jpg',
     product_images: ['/products/largeformat/bannermaterials/image2.jpg', '/products/largeformat/bannermaterials/image3.jpg', '/products/largeformat/bannermaterials/image4.jpg']
@@ -208,6 +220,7 @@ export const products = [
     title: 'Boards',
     main_category: 'Large Format',
     product_description: '',
+    subcategory: 'Boards',
     link: '/product/large-format/boards',
     main_image: '/products/largeformat/boards/acrylic/image1.jpg',
     product_images: ['/products/largeformat/boards/acrylic/image2.jpg', '/products/largeformat/boards/acrylic/image3.jpg','/products/largeformat/boards/acrylic/image4.jpg', '/products/largeformat/boards/aluco/image1.jpg', '/products/largeformat/boards/aluco/image2.jpg', '/products/largeformat/boards/aluco/image3.jpg']
@@ -217,6 +230,7 @@ export const products = [
     title: 'Snapper Frames',
     main_category: 'Large Format',
     product_description: '',
+    subcategory: 'Snapper Frames',
     link: '/product/large-format/snapperframes',
     main_image: '/products/largeformat/snapper/image2.jpg',
     product_images: ['/products/largeformat/snapper/image1.jpg']
@@ -226,6 +240,7 @@ export const products = [
     title: 'Vinyls',
     main_category: 'Large Format',
     product_description: '',
+    subcategory: 'Vinyls',
     link: '/product/large-format/vinyl',
     main_image: '/products/largeformat/vinyls/image1.jpg',
     product_images: ['/products/largeformat/vinyls/image2.jpg']
@@ -235,6 +250,7 @@ export const products = [
     title: 'Self Adhesive Paper',
     main_category: 'Paper',
     product_description: '',
+    subcategory: 'Self Adhesive Paper',
     link: '/product/paper/self-adhesive-paper',
     main_image: '/products/paper/selfadhesive/image1.jpg',
     product_images: ['/products/paper/selfadhesive/image2.jpg']
@@ -244,6 +260,7 @@ export const products = [
     title: 'NCR Paper',
     main_category: 'Paper',
     product_description: '',
+    subcategory: 'NCR Paper',
     link: '/product/paper/ncr-paper',
     main_image: '/products/paper/ncr/image1.jpg',
     product_images: []
@@ -252,6 +269,7 @@ export const products = [
     id: 26,
     title: 'Ivory Paper',
     main_category: 'Paper',
+    subcategory: 'Ivory Paper',
     link: '/product/paper/ivorypaper',
     main_image: '/products/paper/ivory/image1.jpg',
     product_image: ['/products/paper/ivory/image2.jpg']

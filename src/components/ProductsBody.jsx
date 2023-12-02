@@ -6,24 +6,24 @@ import { productsContext } from "../context";
 const ProductsBody = () => { 
   const [productsData, setProductsData] = useContext(productsContext)
   const all_products = localStorage.getItem('Products') ? JSON.parse(localStorage.getItem('Products')) : []
-  
-  const shuffled = productsData.sort(() => Math.random() - 0.45);
+  const shuffled = productsData[0].stuff.sort(() => Math.random() - 0.45);
 
   const searchProducts = (e) =>{
          if(e.target.value === ''){
-                setProductsData(all_products);
+                setProductsData([{ title: 'All Products', stuff: all_products}]);
          }else{
-              const filteredData = productsData.filter(item => (
+              const filteredData = productsData[0].stuff.filter(item => (
                       item.title.toLowerCase().includes(e.target.value.toString().toLowerCase())
               ))
-              setProductsData(filteredData)
+          
+              setProductsData([{title: "All Products", stuff: filteredData}])
          }
   }
   return (
     <div className="products-body">
                 <div className="products-body-content">
                              <div className="products-body-header">
-                                          <h2>All Products</h2>
+                                          <h2>{productsData[0].title}</h2>
                                           <div className="search-bar-area">
                                                     <span><GoSearch /></span>
                                                     <input type="text" className="search-control" placeholder="Search products here" onChange={(e) => searchProducts(e)} />

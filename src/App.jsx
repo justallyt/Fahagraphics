@@ -8,6 +8,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Services from "./pages/Services"
 import Products from "./pages/Products"
+import SingleProduct from "./pages/SingleProduct"
 function App() {
   const location = useLocation()
 
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/services/" element={<Services />} />
                 <Route path="/products/" element={<Products />} />
                 <Route path="/contact-us/" element={<Contact />} />
+                <Route path="/product/:name" element={<SingleProduct />} />
     </Routes>
   )
 }

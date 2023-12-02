@@ -41,7 +41,7 @@ export const filterData = [
                    },
                    {
                        id: 'uid4',
-                       subfilter_header_text: 'Vanishes'
+                       subfilter_header_text: 'Varnishes'
                    },
             ]
        },
@@ -128,7 +128,20 @@ export const filterData = [
    {
       id: 4,
       header_text: 'Paper',
-      subfilters: []
+      subfilters: [
+             {
+                   id: 'o4udflhs',
+                   subfilter_header_text: 'NCR Paper'
+             },
+             {
+                id: 'dhfjso43',
+                subfilter_header_text: 'Ivory Paper'
+             },
+             {
+                id: 'ljdfu4309',
+                subfilter_header_text: 'Self Adhesive Paper'
+             }
+      ]
    }
 
 ]

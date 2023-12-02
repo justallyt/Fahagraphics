@@ -2,7 +2,7 @@ import logo1 from "../assets/sigwerk.jpg"
 import logo2 from '../assets/daetwyler.jpg'
 import logo3 from "../assets/kinyo.jpg"
 import logo4 from "../assets/atece.png"
-import logo5 from "../assets/vanson.jpg"
+// import logo5 from "../assets/vanson.jpg"
 import quality from "../assets/quality.png"
 import variety from "../assets/variety.png"
 import customer from "../assets/customer-engagement.png"
@@ -18,7 +18,7 @@ const AboutSection = () => {
                                               <h3 data-aos='fade-down'>Trusted Partners</h3>
                                               <div className="partnership-logos">
                                                           <img data-aos='zoom-in-up' src={logo1} alt="" />
-                                                          <img  data-aos='zoom-in-up'  src={logo5} alt="" />
+                                                          {/* <img  data-aos='zoom-in-up'  src={logo5} alt="" /> */}
                                                           <img  data-aos='zoom-in-up'  src={logo2} alt="" />
                                                           <img  data-aos='zoom-in-up'  src={logo3} alt="" />
                                                           <img  data-aos='zoom-in-up'  src={logo4} alt="" />                                             
