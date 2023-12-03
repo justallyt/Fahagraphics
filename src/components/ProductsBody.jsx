@@ -32,7 +32,7 @@ const ProductsBody = () => {
 
                              <div className="products-row">
                                        { shuffled.length > 0 ? shuffled.map(item => 
-                                             <div className="product-moja" key={item.id}>
+                                             <div className="product-moja" key={item.id} >
                                                        <div className="product-image">
                                                                 <img src={item.main_image} alt="" /> 
                                                        </div>
@@ -41,7 +41,7 @@ const ProductsBody = () => {
                                                                  <span>{item.main_category}</span>
                                                                  { item.subcategory && <span>{item.subcategory}</span>}
                                                         </div>
-                                                        <Link to={'/'}>Inquire <span><BsBoxArrowInRight /></span></Link>
+                                                        <Link to={item.link}>Inquire <span><BsBoxArrowInRight /></span></Link>
                                              </div>               
                                         ) : <p>No products found</p>}
                              </div>
