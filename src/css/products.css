@@ -343,6 +343,7 @@
 .breadcrumb h2{
         font-size: 32px;
         font-weight: 500;
+        cursor: pointer;
 }
 .breadcrumb span{
         font-size: 30px;

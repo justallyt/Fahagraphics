@@ -8,7 +8,7 @@ import variety from "../assets/variety.png"
 import customer from "../assets/customer-engagement.png"
 import technical from "../assets/technical-expertise.png"
 import { NavLink } from "react-router-dom"
-import aboutImg from "../assets/about-img.jpg"
+import aboutImg from "../assets/about-img2.jpg"
 const AboutSection = () => {
   return (
     <section className="home-about">

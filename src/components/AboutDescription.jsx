@@ -1,5 +1,5 @@
-import shop from "../assets/storyImg.jpg"
-import mission from "../assets/mission.jpg"
+import shop from "../assets/storyImg2.jpg"
+import mission from "../assets/mission2.jpg"
 import reliability from "../assets/reliabilty.png"
 import growth from "../assets/growth.png"
 import customer from "../assets/customer.png"

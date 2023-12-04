@@ -1,13 +1,13 @@
 import { GoSearch } from "react-icons/go";
 import { BsBoxArrowInRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { productsContext } from "../context";
 const ProductsBody = () => { 
   const [productsData, setProductsData] = useContext(productsContext)
   const all_products = localStorage.getItem('Products') ? JSON.parse(localStorage.getItem('Products')) : []
   const shuffled = productsData[0].stuff.sort(() => Math.random() - 0.45);
-
+  const navigate = useNavigate();
   const searchProducts = (e) =>{
          if(e.target.value === ''){
                 setProductsData([{ title: 'All Products', stuff: all_products}]);
@@ -32,7 +32,7 @@ const ProductsBody = () => {
 
                              <div className="products-row">
                                        { shuffled.length > 0 ? shuffled.map(item => 
-                                             <div className="product-moja" key={item.id} >
+                                             <div className="product-moja" key={item.id} onClick={() => navigate(item.link)}>
                                                        <div className="product-image">
                                                                 <img src={item.main_image} alt="" /> 
                                                        </div>

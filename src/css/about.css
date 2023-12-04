@@ -24,7 +24,7 @@
 
 .company-video{
        height: 550px;
-       background: linear-gradient(rgba(31, 23, 0, 0.3), rgba(36, 26, 0, 0.6), rgba(36, 26, 0, 0.3)), url('../assets/videobg.jpg') no-repeat;
+       background: linear-gradient(rgba(31, 23, 0, 0.1), rgba(36, 26, 0, 0.4), rgba(36, 26, 0, 0.1)), url('../assets/faha1.jpg') no-repeat;
        background-size: cover;
        display: flex;
        align-items: center;

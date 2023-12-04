@@ -1,20 +1,22 @@
 import { MdOutlineArrowRight } from "react-icons/md";
 import OffsetPrintingInks from "./OffsetPrintingInks";
 import UVPrintingInks from "./UVPrintingInks";
+import { useNavigate } from 'react-router-dom'
 
 const SingleProductBody = ({ data }) => {
+    const navigate = useNavigate();
    let new_data = data.filter(item => item.main_category !== 'Printing Inks')
    let special_data = data.filter(item => item.main_category === 'Printing Inks')
    let other_special_data = special_data.filter(item => item.subcategory !== 'Offset Printing Inks' && item.subcategory !== 'UV Printing Inks')
    let offset = special_data.filter(item => item.subcategory === 'Offset Printing Inks')
    let uv = special_data.filter(item => item.subcategory === 'UV Printing Inks')
-  console.log(uv); 
+
   return (
     <div className="single-product-wrapper">
                <div className="inner-row">
                            <div className="single-product-content">
                                        <div className="breadcrumb">
-                                                 <h2>Products</h2>
+                                                 <h2 onClick={() => navigate('/products/')}>Products</h2>
                                                  <span><MdOutlineArrowRight /></span> 
                                                  <h3>{ special_data.length > 0 ? special_data[0].main_category : new_data[0].main_category}</h3>
                                        </div>

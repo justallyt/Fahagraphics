@@ -480,6 +480,16 @@
        background: #ffb700;
 }
 
+.product-column-quad{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+}
+.product-column-double{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 5px;
+}
 /* Shop Styles */
 .shop-section{
       padding: 20px 0px 100px 0px;

@@ -29,11 +29,11 @@ const Footer = () => {
                                     <div className="footer-column">
                                                 <h3>Products</h3>
                                                 <ul>
-                                                          <li><NavLink to={'/'}>Printing Inks</NavLink></li>
-                                                          <li><NavLink to={'/'}>Printing Ink Consumables</NavLink></li>
-                                                          <li><NavLink to={'/'}>Pressroom Chemicals</NavLink></li>
-                                                          <li><NavLink to={'/'}>Large Format</NavLink></li>
-                                                          <li><NavLink to={'/'}>Papers</NavLink></li>
+                                                          <li><NavLink to={'/product/printing-inks'}>Printing Inks</NavLink></li>
+                                                          <li><NavLink to={'/product/printing-ink-consumables'}>Printing Ink Consumables</NavLink></li>
+                                                          <li><NavLink to={'/product/pressroom-chemicals'}>Pressroom Chemicals</NavLink></li>
+                                                          <li><NavLink to={'/product/large-format'}>Large Format</NavLink></li>
+                                                          <li><NavLink to={'/product/paper'}>Paper</NavLink></li>
                                                 </ul>
                                     </div>
                                     <div className="footer-column">
