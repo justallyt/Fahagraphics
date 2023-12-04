@@ -35,7 +35,6 @@
 .filters-wrapper{
      padding: 5px;
      position: relative;
-
 }
 .filters-wrapper::after{
        position: absolute;
@@ -46,6 +45,11 @@
        right: -20px;
        top: 0;
 }
+/* .filters-wrapper-content{
+        position: sticky;
+        top: 50px;
+        left: 0;
+} */
 .filters-wrapper-content h3{
     font-weight: 500;
     font-size: 18px;
@@ -349,6 +353,170 @@
        font-weight: 500;
        margin-top: 7px;
 }
+
+.single-product-row{
+         display: grid;
+         grid-template-columns: 3fr 1.5fr;
+         gap: 30px;
+         margin-top: 30px;
+}
+
+.product-moja-row h2,
+.offset-printing-inks h2{
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--main-color);
+}
+.product-moja-row p.product-desc,
+.offset-printing-inks p{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25px;
+        width: 95%;
+        margin: auto;
+}
+.product-moja-row .more ol,
+.sheetfed-offset-inks,
+.web-offset,
+.uv-inks-row{
+         width: 90%;
+         margin:10px  auto;
+}
+.product-moja-row ol li{
+       margin-bottom: 10px;
+}
+.product-moja-row ol li p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+}
+.product-moja-row .item-body,
+.sheetfed-moja .item-body,
+.uv-ink-moja .item-body{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        width: 95%;
+        margin: 20px auto; 
+}
+.product-moja-row .item-body img,
+.sheetfed-moja .item-body img,
+.uv-ink-moja .item-body img{
+         height: 300px;
+         object-fit: cover;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+}
+.offset-printing-inks .intro span{
+        font-weight: 600;
+        font-size: 20px;
+}
+.offset-row{
+        width: 90%;
+        margin: 10px auto;
+}
+.offset-row h4{
+        font-size: 14px;
+}
+.form-column{
+        position: relative;
+}
+
+.form-column-body{
+       background: rgb(3, 35, 56);
+       padding: 30px;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       position: sticky;
+       top: 10px;
+       right: 0;
+}
+.form-column-intro{
+        text-align: center;
+}
+.form-column-intro h3{
+        font-weight: 500;
+        margin-bottom: 10px;
+}
+.form-column-intro p{
+        font-size: 14px;
+        margin-bottom: 20px;
+}
+.form-column .row-moja{
+        margin-bottom: 10px;
+}
+.form-column .row-moja label{
+       font-size: 14px;
+       display: block;
+       margin-bottom: 5px;
+}
+.form-column .row-moja .input-control{
+        width: 100%;
+        height: 50px;
+        padding-left: 8px;
+        font-family: var(--font-regular);
+        border: none;
+        background:rgba(16, 63, 95, 0.4);
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        outline: none;
+        color: rgb(222, 222, 222);;
+}
+.form-column .row-moja select{
+       background: rgba(16, 63, 95) !important
+}
+.form-column .row-moja textarea{
+       width: 100%;
+       height: 100px;
+       padding: 8px;
+       font-family: var(--font-regular);
+       border: none;
+       background:rgba(16, 63, 95, 0.4);
+       border-radius: 7px;
+       -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+       -ms-border-radius: 7px;
+       -o-border-radius: 7px;
+       outline: none;
+       color: rgb(222, 222, 222);;
+}
+.form-column .row-moja .input-control::placeholder,
+.form-column .row-moja textarea::placeholder{
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.496);;
+}
+.row-btn button{
+        width: 150px;
+        height: 45px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        font-family: var(--font-regular);
+        font-weight: 500;
+        cursor: pointer;
+        background-color: var(--main-color);
+        border: none;
+        color: whitesmoke;
+}
+
+
+
+
+
+
+
+
 
 
 
