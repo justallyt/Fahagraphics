@@ -3,7 +3,7 @@
         background-size: cover;
         background-position: right;
         padding-bottom: 100px;
-        height: 130vh;
+        height: 100vh;
 }
 .hero{
      position: relative;
@@ -411,6 +411,7 @@
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
       object-fit: cover;
+      cursor: pointer;
 }
 .product-column a{
      color: gainsboro;
@@ -888,7 +889,7 @@
         }
         .hero-content .hero-texts{
                 text-align: center;
-                padding-top: 80px;
+                padding-top:150px;
         }
         .hero-content p,
         .hero-content a{
@@ -948,11 +949,11 @@
         .product-column:nth-child(5),
         .product-column:nth-child(4),
         .product-column:nth-child(8){
-              grid-column: span 1;
+              grid-column: span 2;
         }
         .product-column:nth-child(6),
         .product-column:nth-child(9){
-              grid-column: span 2;
+              grid-column: span 1;
         }
 
         .shop-hook-and-image{
@@ -999,7 +1000,7 @@
              background-position: 80%
       }
       .hero-content .hero-texts{
-            padding-top: 80px;
+            padding-top: 120px;
        }
        .hero-content p{
              font-size: 15px;
@@ -1066,9 +1067,17 @@
              font-size: 15px;
       }
       .what-we-do-row{
-             grid-template-columns: 1fr;
+             display: block;
+             gap: 0;
       }
-
+      .product-column-quad{
+             place-items: center;
+             margin: auto;
+      }
+      .product-column-quad img{
+               max-height: 130px;
+      }
+      .product-column:nth-child(2),
       .product-column:nth-child(3),
 .product-column:nth-child(4),
 .product-column:nth-child(8),

@@ -568,6 +568,27 @@
        .filters-wrapper::after{
                display: none;
        }
+
+       .single-product-row{
+             grid-template-columns: 1fr;
+       }
+       .product-moja-row .item-body,
+       .sheetfed-moja .item-body,
+       .uv-ink-moja .item-body{
+              grid-template-columns: 1fr 1fr;
+              width: 100%;;
+       }
+       .product-moja-row .item-body img,
+.sheetfed-moja .item-body img,
+.uv-ink-moja .item-body img{
+         height: 250px;
+}
+       .form-column-body{
+              position: relative;
+       }
+
+
+
 }
 
 @media(max-width: 768px){

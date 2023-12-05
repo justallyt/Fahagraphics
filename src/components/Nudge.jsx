@@ -9,7 +9,7 @@ const Nudge = () => {
                                     <div className="explain-texts">
                                                 <div className="explain-inner">
                                                          <p data-aos='zoom-in-left'>We go above and beyond to deliver quality, bringing the exact precision to revatilize your printing business.</p>
-                                                          <NavLink to={'/contact'} data-aos='zoom-in-left'>Let&apos;s Talk</NavLink>
+                                                          <NavLink to={'/contact-us/'} data-aos='zoom-in-left'>Let&apos;s Talk</NavLink>
                                                 </div>
                                     </div>
                           </div>
