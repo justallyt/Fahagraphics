@@ -3,7 +3,7 @@
         background-size: cover;
         background-position: right;
         padding-bottom: 100px;
-        height: 100vh;
+        height: 110vh;
 }
 .hero{
      position: relative;
@@ -17,10 +17,10 @@
       z-index: 10;
 }
 .hero-content .hero-texts{
-     padding-top: 100px;
+     padding-top: 80px;
 }
 .hero-content h1{
-    font-size: 80px;
+    font-size: 70px;
     font-family: var(--font-bold);
     opacity: 0;
     transform: translateY(120px);
@@ -53,17 +53,17 @@
        left: -100px;
        z-index: 2;
 }
-.hero-content h1 span{
+/* .hero-content h1 span{
     background: -webkit-linear-gradient(#0086d8,#53b5f3, #53b5f3, #e149bd,#e149bd, #eaa800, #eebc25e8, #eebc256d);
     background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .hero-content p{
      font-size: 17px;
      font-weight: 300;
-     width: 90%;
+     width: 85%;
      line-height: 32px;
      margin-bottom: 20px;
      transform: translateY(50px);
@@ -157,10 +157,37 @@
        width: 200px;
        max-height: 70px;
        object-fit: contain;
-       filter: invert(100%);
-       -webkit-filter: invert(100%);
 }
-
+.partnership-logos a{
+        border: 1px solid white;
+        width: 250px;
+        display: flex;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: relative;
+}
+.partnership-logos a .image-overlay{
+      position: absolute;
+      height: 90px;
+      width: 60%;
+      background: #009fe3;
+      z-index: 3;
+}
+.partnership-logos a img{
+       position: relative;
+       z-index: 5;
+}
+/* .partnership-logos img.convert{
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+} */
 .why-section{
      margin: 80px 0;
 }
@@ -172,13 +199,13 @@
       margin: 20px auto;
       font-family: var(--font-bold);
 }
-.why-section h1 span.blueish{
+span.blueish{
       color:#029dfd;
 }
-.why-section h1 span.pinkish{
+span.pinkish{
       color: #fb03de;
 }
-.why-section h1 span.dark-yellow{
+span.dark-yellow{
       color: #ffb700;
 }
 .reasons-row{
@@ -237,7 +264,7 @@
 .about-description{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      gap: 80px;
+      gap: 30px;
       padding-top: 80px;
 }
 .texts-side{
@@ -249,12 +276,10 @@
       color: var(--main-color);
 }
 .texts-side h1{
-      font-size: 60px;
+      font-size: 50px;
       margin: 20px 0;
 }
-.texts-side h1 span{
-      color: #fb03de;
-}
+
 .texts-side p{
      line-height: 30px;
      margin-bottom: 20px;
@@ -810,7 +835,12 @@
       font-size: 12px;
       font-weight: 200;
 }
-
+.testimonials-row p{
+         font-size: 17px;
+         margin-bottom: 10px;
+         font-weight: 300;
+         line-height: 28px;
+}
 /* Nudge Section */
 .nudge-section{
         padding: 100px 0;
@@ -880,8 +910,12 @@
        }
 }
 @media(max-width: 1090px){
+       .landing{
+               height: 800px !important;
+       }
         .hero{
                padding: 0px;
+               padding-bottom: 50px;
         }
         .hero-content{
             grid-template-columns: 1fr;
@@ -889,7 +923,7 @@
         }
         .hero-content .hero-texts{
                 text-align: center;
-                padding-top:150px;
+                padding-top:100px;
         }
         .hero-content p,
         .hero-content a{
@@ -1000,7 +1034,7 @@
              background-position: 80%
       }
       .hero-content .hero-texts{
-            padding-top: 120px;
+            padding-top: 80px;
        }
        .hero-content p{
              font-size: 15px;
@@ -1059,7 +1093,7 @@
       .services-section .services-intro h1,
       .testimonials-intro h1,
       .nudge-section-content h1{
-            font-size: 55px;
+            font-size: 50px;
       }
       .what-we-do .intro p,
       .texts-side p,
@@ -1089,11 +1123,14 @@
              width: 100%;
       }
       .testimonials-row{
-             width: 400px;
+             width: 100%;
       }
 
 }
 @media(max-width: 600px){
+      .landing{
+             height: 850px !important
+      }
       .service-images{
             display: none;
       }
@@ -1102,6 +1139,9 @@
       }
       .service-moja:nth-child(1) p,
       .service-moja p{
+             width: 100%;
+      }
+      .shop-hook-image{
              width: 100%;
       }
 }
@@ -1117,10 +1157,18 @@
         .achievement-moja p{
              width: 100%;
         }
+        .landing{
+              height: 700px;
+        }
+        .hero-content h1,
+        .why-section h1,
+        .what-we-do .intro h1,
+        .texts-side h1,
+        .services-section .services-intro h1,
+        .testimonials-intro h1,
+        .nudge-section-content h1{
+               font-size: 40px;
+        }
+
 }
 
-@media(max-width: 320px){
-        .testimonials-row{
-             max-width: 250px;
-        }
-}

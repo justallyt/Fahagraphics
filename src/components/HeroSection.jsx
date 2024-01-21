@@ -39,9 +39,12 @@ const HeroSection = () => {
                         <div className="hero-content">
                                   <div className="hero-texts">
                                            <div className="hero-texts-inner">
-                                                     <h1 ref={heading}>The Largest <span>Print Supply Solution</span> in Kenya.</h1>
-                                                      <p ref={copy}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem quas excepturi consequuntur tempora reprehenderit quam fugiat odio accusantium quisquam.</p>
-                                                     <NavLink to={'/'} ref={btn}>Explore <span><HiMiniArrowLongRight /></span></NavLink>
+                                                      <h1 ref={heading}><span className="blueish">Unleash</span> your Vibrant world with  <span className="pinkish">Premium</span> Printing <span className="dark-yellow">Ink Supplies</span> and <span className="dark-yellow">Consumables</span></h1>
+                                                   
+                                                      <p ref={copy}>
+                                                               Welcome to the realm of vivid colors and boundless creativity! We&apos;re your one-stop shop for premium printing ink supplies, fueling the artistic endeavors of individuals and businesses alike.
+                                                        </p>
+                                                     <NavLink to={'/products/'} ref={btn}>Explore <span><HiMiniArrowLongRight /></span></NavLink>
                                            </div>
                                   </div>
                                   {/* <div className="hero-images">

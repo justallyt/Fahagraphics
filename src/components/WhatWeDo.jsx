@@ -25,14 +25,14 @@ const WhatWeDo = () => {
                          <div className="what-we-do-content">
                                      <div className="intro">
                                              <h1 data-aos='fade-down'>One Stop Shop for all your <span>Printing Needs</span></h1>
-                                             <p  data-aos='zoom-in-up'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum fuga maxime possimus doloribus, sit voluptatem nam delectus modi voluptatum quam sequi. Nemo nisi quibusdam dolore quos possimus obcaecati libero animi?</p>
+                                             <p  data-aos='zoom-in-up'>From inks to paper, print consumables to large format, we&apos;ve got every tool to make your printing dreams a reality.  We help you conquer deadlines with reliable printing ink solutions as you unleash your creativity with specialty options.</p>
                                      </div>
 
                                      <div className="what-we-do-row">
                                                  <div data-aos='zoom-in-right' className="product-column">
                                                             <div className="product-column-texts">
                                                                     <h4>Printing Inks</h4>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio quae sit maxime, veniam nostrum quasi dicta harum dolor similique!</p>
+                                                                    <p>Browse through our collection of printing ink products which include: offset printing inks,uv printing inks, solvent printing inks, varnishes and many more. </p>
                                                                     <NavLink to={'/product/printing-inks'}>Explore</NavLink>
                                                             </div>
                                                  </div>
@@ -48,7 +48,7 @@ const WhatWeDo = () => {
                                                  <div data-aos='zoom-in-left' className="product-column">
                                                         <div className="product-column-texts">
                                                                     <h4>Printing Ink Consumables</h4>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio quae sit maxime, veniam nostrum quasi dicta harum dolor similique!</p>
+                                                                    <p>Browse through our collection of printing ink consumables products which include: printing plates, printing blankets, lamination films and doctor blades</p>
                                                                     <NavLink to={'/product/printing-ink-consumables'}>Explore</NavLink>
                                                             </div>
                                                  </div>
@@ -68,7 +68,7 @@ const WhatWeDo = () => {
                                                  <div data-aos='zoom-in' className="product-column">
                                                         <div className="product-column-texts">
                                                                     <h4>Pressroom Chemicals</h4>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio quae sit maxime, veniam nostrum quasi dicta harum dolor similique!</p>
+                                                                    <p>Browse through our collection of pressroom chemicals which include: press washes, press additives, fountain solutions and plate cleaners.</p>
                                                                     <NavLink to={'/product/pressroom-chemicals'}>Explore</NavLink>
                                                             </div>
                                                  </div>
@@ -83,7 +83,7 @@ const WhatWeDo = () => {
                                                  <div data-aos='zoom-in-up' className="product-column">
                                                            <div className="product-column-texts">
                                                                     <h4>Large Format</h4>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio quae sit maxime, veniam nostrum quasi dicta harum dolor similique!</p>
+                                                                    <p>Browse through our collection of large format products which include: banner materials, boards, snapper frames and vinyls</p>
                                                                     <NavLink to={'/product/large-format'}>Explore</NavLink>
                                                             </div>
                                                  </div>
@@ -101,7 +101,7 @@ const WhatWeDo = () => {
                                                  <div data-aos='zoom-in-up' className="product-column">
                                                            <div className="product-column-texts">
                                                                     <h4>Papers</h4>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio quae sit maxime, veniam nostrum quasi dicta harum dolor similique!</p>
+                                                                    <p>Browse through our collection of paper products which include: self adhesive paper, NCR paper and Ivory paper.</p>
                                                                     <NavLink to={'/product/paper'}>Explore</NavLink>
                                                             </div>
                                                  </div>

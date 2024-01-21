@@ -1,5 +1,5 @@
 import shop from "../assets/storyImg2.jpg"
-import mission from "../assets/mission2.jpg"
+import mission from "../assets/pride-of-lions.jpg"
 import reliability from "../assets/reliabilty.png"
 import growth from "../assets/growth.png"
 import customer from "../assets/customer.png"
@@ -19,19 +19,19 @@ const AboutDescription = () => {
                                                           <h5>Clients worldwide</h5>
                                                </div>
                                                <div className="bar-moja">
-                                                        <h1>20+</h1>
-                                                        <h5>Years in the markets</h5>
+                                                        <h1>16+</h1>
+                                                        <h5>Years in the market</h5>
                                                </div>
                                                <div className="bar-moja">
-                                                         <h1>150+</h1>
-                                                         <h5>Specialized Analysts</h5>
+                                                         <h1>5+</h1>
+                                                         <h5>Specialized Ink Experts</h5>
                                                </div>
                                                <div className="bar-moja">
-                                                          <h1>30+</h1>
+                                                          <h1>20+</h1>
                                                            <h5>Countries</h5>
                                                </div>
                                                <div className="bar-moja">
-                                                          <h1>24/7</h1>
+                                                          <h1>8AM-5PM</h1>
                                                           <h5>Availability</h5>
                                                </div>
                                     </div>
@@ -39,8 +39,9 @@ const AboutDescription = () => {
                                     <div className="story-row">
                                                 <div className="story-texts">
                                                            <h3 data-aos='fade-down'>Our Story</h3>
-                                                           <p data-aos='fade-up'>Fahagraphics Enterprises Limited was incorporated in 2006 by Mr. Fardeen Abdulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum qui dolores ab omnis est vero tempore magnam! Eius vel illum explicabo ullam blanditiis fuga dolorum voluptate ipsum praesentium quos sint provident, quisquam tempora accusamus perferendis. Ad at non ipsam neque!</p>
-                                                           <p data-aos='fade-up'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora alias libero minima est aliquid perferendis impedit incidunt vero rem aspernatur accusantium accusamus labore pariatur, voluptatum illo expedita et qui aperiam, minus esse eius?</p>
+                                                           <p data-aos='fade-up'>Fahagraphics Enterprises Limited was incorporated in 2007 in Kenya as dealers and suppliers of printing inks, printing ink consumables and large format media products. Our products are presently being supplied to various market segments as follows: offset printing industry, web offset printing industry (newspaper printing & book publishers), gravure & flexo printing industry, large format digital printers and stationery shops.</p>
+                                                           <p data-aos='fade-up'>We also pride ourselves as authorized distributors for the following companies:DAETWYLER, KINYO, SIEGWERK, ATECE and JANECKE+SCHNEEMANN.</p>
+                                                           <p data-aos='fade-up'>Over the decades we have maintained a successful track record of continuous growth and innovation. As a family-led business, our key focus is to create valuable, long-lasting relationships with our clients, and provide you with the means to grow your business.</p>
                                                 </div>
                                                 <div className="shop-hook-image">
                                                           <img data-aos='zoom-in' src={shop} alt="" />
@@ -55,9 +56,9 @@ const AboutDescription = () => {
                                                <div className="statements-texts">
                                                          <div className="statements-inner">
                                                                     <h3 data-aos='fade-down'>Our Mission</h3>
-                                                                     <p data-aos='fade-left'>Printing businesses has transformative powers, and we believe everyone should be able to take part. But outdated solutions and overwhelmed systems create uncertianty and risk.</p>
-                                                                     <h2 data-aos='fade-left'>We therefore are on a mission to empower print businesses to realize their full potential by reliably and conveniently supplying them with quality products.</h2>
-                                                                     <p data-aos='fade-left'>Additionaly we have a vision to continue growing and Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, rem incidunt eum dolor aperiam voluptatibus culpa aspernatur quia itaque maiores explicabo voluptas impedit? Quod voluptatem, dolore tempore repudiandae quos error?</p>
+                                                              
+                                                                     <h2 data-aos='fade-left'>We aspire to be a “One Stop Print solution” Company for packaging, coating and large format customers both in Kenya and in the larger Eastern Africa market, with better services at the most competitive prices.</h2>
+                                                                     <p data-aos='fade-left'>We aim to remain one of the most successful suppliers of printing inks and printing consumables in East African Market, through provision of the best-quality inks for the offset, liquid and solvent clients. We pride ourselves in utilization of state-of-the-art machineries in our premises, complimented with the most skilled and experienced industry professionals, with a huge investment and commitment to environmental preservation.</p>
                                                          </div>
                                                </div>
                                     </div>

@@ -1,21 +1,25 @@
-import { BiSolidQuoteAltLeft } from "react-icons/bi"
-import { Swiper, SwiperSlide } from 'swiper/react'
+// import { BiSolidQuoteAltLeft } from "react-icons/bi"
+// import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 import "swiper/css/navigation"
-import { Autoplay } from "swiper"
-import { testimonials_data } from "../data/testimonials"
+// import { Autoplay } from "swiper"
+// import { testimonials_data } from "../data/testimonials"
 const Testimonials = () => {
   return (
     <div className="testimonials-section">
              <div className="inner-row">
                         <div className="testimonials-section-content">
                                     <div className="testimonials-intro" >
-                                               <h1 data-aos='fade-right'>What <span>Our Customers</span> Say</h1>
-                                               <p data-aos='zoom-in-up'>Excellent at producing high quality ink, flexo paper and visual mockups for several of our clients and here are what they say about us:</p>
+                                               <h1 data-aos='fade-right'>Message From <span>Our Founder</span> </h1>
+                
                                     </div>
                                     <div className="testimonials-row"  data-aos='zoom-in-up'>
+                                               <p className="ceo-message">
+                                                           We as a company believe that we are competing against ourselves. We know that the heart and soul of a company is creativity and innovation. <br></br>
+                                               </p>
+                                               <p>We also appreciate the tireless effort from all our Stakeholders, business partners, customers and our employees who have always been there for us and were it not for them, the company would not be able to sustain the volatility of its commercial activities. I truly hope that the company will continue to get more positive support and trust in the future.</p>
                                               <div className="testimonial-row-container">
-                                                          <Swiper
+                                                          {/* <Swiper
                                                                   spaceBetween={20}
                                                                   slidesPerView={1}
                                                                   
@@ -43,7 +47,7 @@ const Testimonials = () => {
                                                                  </div>
                                                             </SwiperSlide>
                                                         )}
-                                                     </Swiper>
+                                                     </Swiper> */}
                                               </div>
                                     </div>
                         </div>

@@ -2,7 +2,9 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import OffsetPrintingInks from "./OffsetPrintingInks";
 import UVPrintingInks from "./UVPrintingInks";
 import { useNavigate } from 'react-router-dom'
-
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+import axios from "axios";
 const SingleProductBody = ({ data }) => {
     const navigate = useNavigate();
    let new_data = data.filter(item => item.main_category !== 'Printing Inks')
@@ -11,6 +13,27 @@ const SingleProductBody = ({ data }) => {
    let offset = special_data.filter(item => item.subcategory === 'Offset Printing Inks')
    let uv = special_data.filter(item => item.subcategory === 'UV Printing Inks')
 
+   const API_PATH = import.meta.env.VITE_PRODUCT_API_PATH;
+   
+   const [btnMsg, setBtnMsg] = useState("Send Inquiry");
+   const [serverMsg, setServerMsg] = useState("do stuff you like with people you like")
+   const { register, handleSubmit , formState: { errors }, reset} = useForm();
+
+   const submitForm = (form_data) => {
+           setBtnMsg('Sending...');
+           axios.post(API_PATH, { form_data})
+           .then(res => {
+                   setServerMsg(res.data.message);
+                   reset();
+           }).finally(() =>{
+                 setBtnMsg('Sent')
+           })
+   }
+   setTimeout(() => {
+         setBtnMsg('Send Inquiry');
+         setServerMsg('')
+   }, 4500)
+   
   return (
     <div className="single-product-wrapper">
                <div className="inner-row">
@@ -44,35 +67,44 @@ const SingleProductBody = ({ data }) => {
                                                                               <h3>Interested in any {special_data[0].main_category} Products</h3>
                                                                               <p>Fill in the form below and submit to get a quote from us.</p>
                                                                        </div>
-                                                                        <form action="">
+                                                                        <form onSubmit={handleSubmit(submitForm)}>
                                                                                     <div className="row-moja">
                                                                                              <label htmlFor="name">Full Name <span>*</span></label>
-                                                                                                <input type="text" className="input-control" placeholder="Your name" />
+                                                                                                <input type="text" className="input-control" placeholder="Your name" {...register('fullname', {required: 'Your name is required'})} />
+                                                                                                <span className="error">{errors.fullname && errors.fullname.message}</span>
                                                                                     </div>
                                                                                      <div className="row-moja">
                                                                                              <label htmlFor="email">Email Address <span>*</span></label>
-                                                                                             <input type="email" placeholder="Your email" className="input-control" />
+                                                                                             <input type="email" placeholder="Your email" className="input-control" {...register('email', { required: 'Your email is required'})} />
+                                                                                             <span className="error">{errors.email && errors.email.message}</span>
                                                                                       </div>
                                                                                       <div className="row-moja">
                                                                                                   <label htmlFor="phone">Phone Number <span>*</span></label>
-                                                                                                  <input type="number" className="input-control" placeholder="Your phone contact" />
+                                                                                                  <input type="number" className="input-control" placeholder="Your phone contact" {...register('phone', { required: 'Your phone number is required'})} />
+                                                                                                  <span className="error">{errors.phone && errors.phone.message}</span>
+                                                                                      </div>
+                                                                                      <div className="row-moja">
+                                                                                                 <input type="text" className="special" {...register('special')} />
                                                                                       </div>
                                                                                      <div className="row-moja">
-                                                                                                <label htmlFor="product">Select Product</label>
-                                                                                                  <select className="input-control">
+                                                                                                <label htmlFor="product">Select Product <span>*</span></label>
+                                                                                                  <select className="input-control" {...register('product', { required: 'Please choose a product'})}>
                                                                                                            <option value="">Select</option>
                                                                                                            { special_data && special_data.length > 0 && [...new Set(special_data.map(val => (val.subcategory)))].map(item => 
                                                                                                                  <option key={item} value=    {item.subcategory}>{item}</option>
                                                                                                                )}
                                                                                                  </select>
+                                                                                                <span className="error">{errors.product && errors.product.message}</span>
                                                                                       </div>
                                                                                      <div className="row-moja">
                                                                                                 <label htmlFor="message">Extra Info on your inquiry</label>
-                                                                                                <textarea placeholder="Any extra info on your inquiry"  cols="30" rows="10"></textarea>
+                                                                                                <textarea placeholder="Any extra info on your inquiry"  cols="30" rows="10" {...register('extra')}></textarea>
                                                                                      </div>
                                                                                      <div className="row-btn">
-                                                                                               <button type="submit">Send Inquiry</button>
+                                                                                               <button type="submit" name="">Send Inquiry</button>
                                                                                      </div>
+                                                                                     { serverMsg === '' ? '' : <p className='server-msg'>{serverMsg}</p>}
+                                                                                     
                                                                         </form>
                                                                 </div>
                                                          </div>
@@ -137,7 +169,7 @@ const SingleProductBody = ({ data }) => {
                                                                                      <textarea placeholder="Any extra info on your inquiry"  cols="30" rows="10"></textarea>
                                                                           </div>
                                                                           <div className="row-btn">
-                                                                                    <button type="submit">Send Inquiry</button>
+                                                                                    <button type="submit">{btnMsg}</button>
                                                                           </div>
                                                               </form>
                                                       </div>

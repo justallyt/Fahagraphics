@@ -1,6 +1,7 @@
 .products-hero-content{
-      padding: 100px 0;
+      /* padding: 100px 0; */
       text-align: center;;
+      padding: 80px 0 40px 0;
 }
 .products-hero-content .products-hero-texts{
        width: 800px;
@@ -18,8 +19,8 @@
 }
 
 .all-products-section{
-      padding: 60px 0 100px 0;
-      background: rgb(0, 6, 10);
+      padding: 0px 0 100px 0;
+      
 }
 .all-products-section .inner-row{
      width: 95%;
@@ -27,9 +28,8 @@
 }
 .products-section-row{
        display: grid;
-       grid-template-columns: 1fr 3.3fr;
-       gap: 20px;
-
+       /* grid-template-columns: 1fr 3.3fr;
+       gap: 20px; */
 }
 
 .filters-wrapper{
@@ -194,6 +194,36 @@
               -o-transform: rotate(360deg)      ;
 }
 }
+
+/* Second Version */
+.filter-options{
+          width: auto;
+          margin-bottom: 30px;
+}
+.filter-options ul{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 30px;
+}
+.filter-options ul li{
+        padding: 12px 30px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        border: 1px solid rgba(83, 123, 154, 0.3);
+        cursor: pointer;
+}
+.filter-options ul li.active{
+        background: var(--main-color);
+        color: white;
+}
+
+
 /* Products Body */
 .products-body{
        padding:0px 20px;
@@ -353,6 +383,7 @@
 .breadcrumb h3{
        font-weight: 500;
        margin-top: 7px;
+       cursor: pointer;
 }
 
 .single-product-row{
@@ -422,6 +453,7 @@
 .offset-row h4{
         font-size: 14px;
 }
+
 .form-column{
         position: relative;
 }
@@ -511,21 +543,19 @@
         color: whitesmoke;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-column-body .error{
+        font-size: 12px;
+        color: red;
+}
+.form-column-body .special{
+        opacity: 0;
+        position: absolute;;
+}
+.server-msg{
+        font-size: 13px;
+        margin-top: 10px;
+        color: rgb(72, 227, 116);
+}
 @media(max-width: 1090px){
        .products-hero-content .products-hero-texts{
                width: 100%;

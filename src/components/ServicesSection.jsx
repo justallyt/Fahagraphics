@@ -1,12 +1,12 @@
-import color1 from "../assets/color-match-2.jpg"
-import color2 from '../assets/color-match.jpg'
+import color1 from "../assets/color-matching1.jpg"
+import color2 from '../assets/color-matching2.jpg'
 import color3 from "../assets/color-match-3.jpg"
-import print1 from "../assets/prints1.jpg"
-import print2 from '../assets/prints2.jpg'
+import print1 from "../assets/support1.jpg"
+import print2 from '../assets/support1.jpg'
 import print3 from "../assets/prints3.jpg"
-import artwork1 from "../assets/artwork.jpg"
-import artwork2 from '../assets/artwork2.jpg'
-import artwork3 from "../assets/artwork3.jpg"
+import artwork1 from "../assets/customized1.jpg"
+import artwork2 from '../assets/color-matching3.jpg'
+import artwork3 from "../assets/support2.jpg"
 import { NavLink } from "react-router-dom"
 
 const ServicesSection = () => {
@@ -21,8 +21,8 @@ const ServicesSection = () => {
                                                <div className="service-moja" data-aos='zoom-in'>
                                                          <div className="service-moja-texts">
                                                                    <h3>Colour Matching</h3>
-                                                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora voluptatem aperiam porro, repudiandae enim ullam nostrum velit quaerat labore suscipit nulla? Corporis aperiam architecto facilis, quam repudiandae obcaecati quos aut quas ea debitis aliquid et illum labore ex eius. Animi, maxime impedit consectetur.</p>
-                                                                   <NavLink to={'/'}>Contact Us</NavLink>
+                                                                   <p>In a dream world, all colors match. Color matching is easy as the ink gets added in the press, and the job is run without any complications in mere seconds. Yes, that’s the dream. Right there.</p>
+                                                                   <NavLink to={'/services/'}>Read more</NavLink>
                                                          </div>
                                                          <div className="service-images">
                                                                     <div className="image-moja">
@@ -38,9 +38,9 @@ const ServicesSection = () => {
                                                </div>
                                                <div className="service-moja" data-aos='fade-right'>
                                                            <div className="service-moja-texts">
-                                                                     <h3>Artwork & Mockups</h3>
-                                                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur quos eveniet maiores fugiat qui sed dolor, aliquam tenetur, non deserunt aut magni. </p>
-                                                                    <NavLink to={'/'}>Contact Us</NavLink>
+                                                                     <h3>Customized Ink to your Press</h3>
+                                                                     <p>We as a company believe that a successful ink formulation necessitates a comprehensive system approach that takes into account all of these elements in order to fulfill the appropriate application performance and functionality at a reasonable price.</p>
+                                                                    <NavLink to={'/services/'}>Read more</NavLink>
                                                            </div>
 
                                                            <div className="service-images">
@@ -57,9 +57,9 @@ const ServicesSection = () => {
                                                </div>
                                                <div className="service-moja" data-aos='fade-left'>
                                                           <div className="service-moja-texts">
-                                                                    <h3>Print Support</h3>
-                                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem fugiat minima quam totam reiciendis excepturi adipisci eligendi, dolore maiores id?</p>
-                                                                    <NavLink to={'/'}>Contact Us</NavLink>
+                                                                    <h3>Personalized Technical Support</h3>
+                                                                    <p>Service is only as good as its accessibility. Our staff are therefore available at short notice – whether by telephone, e-mail or by an expert visiting your machine. And it goes without saying that you will have your own personal point of contact.</p>
+                                                                    <NavLink to={'/services/'}>Read more</NavLink>
                                                           </div>
                                                           <div className="service-images">
                                                                     <div className="image-moja">

@@ -20,7 +20,7 @@ const ContactBody = () => {
                                                                      </div>
                                                                      <div className="detail-moja">
                                                                                 <span><BsEnvelope /></span>
-                                                                                <p>info@fahagraphics.com</p>
+                                                                                <p>info@fahagraphics.co.ke</p>
                                                                      </div>
                                                                      <div className="detail-moja">
                                                                                   <span><BsPinMap /></span>

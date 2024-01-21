@@ -2,7 +2,7 @@
 .body-texts-content{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 50px;
+    gap: 30px;
 }
 
 .body-texts-zenyewe{
@@ -13,10 +13,10 @@
     color: var(--main-color)
 }
 .body-texts-zenyewe h1{
-    font-size: 50px;
+    font-size: 42px;
     margin: 20px 0;
     font-family: var(--font-bold);
-    line-height: 65px;
+    line-height: 55px;
 }
 .body-image img{
       object-fit: contain;
@@ -140,6 +140,7 @@
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
     margin-top: 80px;
+    overflow: hidden;
 }
 
 .story-texts h3,
@@ -169,6 +170,7 @@
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
     margin-top: 60px;
+    overflow:hidden;
 }
 .statements-row .statements-image{
      position: relative;
@@ -191,15 +193,15 @@
 .statements-image::after{
     content: "";
     width: 80%;
-    height: 100%;
-    background: #fb03de;;
+    height: 90%;
+    background: #fb03de;
     position: absolute;
     z-index: 2;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -226,6 +228,7 @@
 .values-section{
     margin-top: 80px;
     padding-top: 60px;
+    overflow: hidden;
 }
 .values-intro{
      width: 900px;

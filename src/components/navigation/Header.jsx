@@ -11,7 +11,6 @@ const Header = () => {
    const [mobileStatus, setMobileStatus] = useContext(navContext);
    const { pathname } = useLocation();
    const path = pathname.slice(1, 8);
-    console.log(path);
    const openMobileMenu = () => setMobileStatus(!mobileStatus);
   return (
     <header>

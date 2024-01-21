@@ -11,18 +11,18 @@ export const menuData = [
                                        id: 'oudn',
                                        title: 'Sheetfed Offset Printing Inks',
                                        prods: [
-                                            { id: '7idfh', name: 'VS3 Series', link: '/products/printing-inks'},
-                                            { id: '7ddfh', name: 'VS1 Series', link: '/products/printing-inks'},
-                                            { id: '7iklh', name: 'FG Lion Series', link: '/products/printing-inks'},
-                                            { id: '7ii8h', name: 'FG3 Intenso Series', link: '/products/printing-inks'},
-                                            { id: '775fh', name: 'FG1 Intenso Series', link: '/products/printing-inks'},
+                                            { id: '7idfh', name: 'VS3 Series', link: '/product/printing-inks/sheetfed-offset-printing-inks/vs3-series'},
+                                            { id: '7ddfh', name: 'VS1 Series', link: '/product/printing-inks/sheetfed-offset-printing-inks/vs1-series'},
+                                            { id: '7iklh', name: 'FG Lion Series', link: '/product/printing-inks/sheetfed-offset-printing-inks/fg-lion-series'},
+                                            { id: '7ii8h', name: 'FG Intenso Series', link: '/product/printing-inks/sheetfed-offset-printing-inks/fg-intenso'},
+                                            { id: '775fh', name: 'FG Series', link:'/product/printing-inks/sheetfed-offset-printing-inks/fg-series'},
                                        ]
                                  },
                                  {
                                     id: 'oyoun',
                                     title: 'Web Offset Printing Inks',
                                     prods: [
-                                         { id: '7i78fh', name: 'VS3 Series', link: '/products/printing-inks'},
+                                         { id: '7i78fh', name: 'VS3 Series', link: '/product/printing-inks/web-offset-printing-inks'},
                                     ]
                               }
                          ],
@@ -36,16 +36,16 @@ export const menuData = [
                                     id: 'dfljsd',
                                     title: 'UV Offset Inks',
                                     prods: [
-                                             { id: 'ljfu8', name: 'Process Colors', link: '/products/printing-inks'},
-                                             { id: 'dhudd', name: 'Spot Colors', link: '/products/printing-inks'}
+                                             { id: 'ljfu8', name: 'Process Colors', link: '/product/printing-inks/uv-offset-inks'},
+                                             { id: 'dhudd', name: 'Spot Colors', link: '/product/printing-inks/uv-offset-inks'}
                                     ]
                                },
                                 { 
                                     id: 'dopsd',
                                     title: 'UV Flexo Inks',
                                     prods: [
-                                             { id: 'ljfu8uo', name: 'Process Colors', link: '/products/printing-inks'},
-                                             { id: 'dhuidd', name: 'Spot Colors', link: '/products/printing-inks'}
+                                             { id: 'ljfu8uo', name: 'Process Colors', link:  '/product/printing-inks/uv-flexo-inks'},
+                                             { id: 'dhuidd', name: 'Spot Colors', link:  '/product/printing-inks/uv-flexo-inks'}
                                     ]
                                }
                          ],
@@ -56,23 +56,23 @@ export const menuData = [
                          subtext: 'Solvent Printing Inks',
                          subcategories: [],
                          subcategory: [
-                               { id: 'lfjdsu', name: 'Seigwark Brands', link: '/products/printing-inks'}
+                               { id: 'lfjdsu', name: 'Seigwark Brands', link:  '/product/printing-inks/solvent-printing-inks'}
                          ],
-                         link: '/products/printing-inks'
+                         link:  '/product/printing-inks/solvent-printing-inks'
                    },
                     {
                          id: 'ujksh',
                          subtext: 'Water Based Printing Inks',
                          subcategories: [],
                          subcategory: [
-                                { id: 'ljdfuo', name: 'Seigwark Brands', link: '/products/printing-inks'}
+                                { id: 'ljdfuo', name: 'Seigwark Brands', link: '/product/printing-inks/water-based-printing-inks'}
                          ],
-                         link: '/products/printing-inks'
+                         link: '/product/printing-inks/water-based-printing-inks'
                    },
                    {
                        id: 'nhueo',
                        subtext: 'Vanishes',
-                       link: '/products/printing-inks'
+                       link: '/product/printing-inks/varnishes'
                    }
          ],
          submenu3: []
@@ -86,9 +86,9 @@ export const menuData = [
                     subtext: 'Printing Blankets',
                     subcategories: [],
                     subcategory: [
-                           { id: 'ysoo4', name: 'Kinyo Printing Blankets', link: '/products/printing-ink-consumables'}
+                           { id: 'ysoo4', name: 'Kinyo Printing Blankets', link: '/product/printing-ink-consumables/printing-blankets'}
                     ],
-                    link: '/products/printing-ink-consumables'
+                    link: '/product/printing-ink-consumables/printing-blankets'
                },
                {
                     id: 'uo84',
@@ -98,33 +98,33 @@ export const menuData = [
                                   id: 'lydfou',
                                   title: 'Sheetfed Offset Printing Plates',
                                   prods: [
-                                          { id: 'hdfuo4', name: 'CTP Plates', link: '/products/printing-ink-consumables'},
-                                          { id: 'hyo4e', name: 'CTCP Plates', link: '/products/printing-ink-consumables'}
+                                          { id: 'hdfuo4', name: 'CTP Plates', link: '/product/printing-ink-consumables/printing-plates'},
+                                          { id: 'hyo4e', name: 'CTCP Plates', link: '/product/printing-ink-consumables/printing-plates'}
                                   ],
-                                  link: '/products/printing-ink-consumables'
+                                  link: '/product/printing-ink-consumables/printing-plates'
                               },
                               { 
                                   id: 'lyd89u',
                                   title: 'Web Offset Printing Plates',
                                   prods: [
-                                          { id: 'hdit4', name: 'CTP Plates', link: '/products/printing-ink-consumables'},
-                                          { id: 'hyrt', name: 'CTCP Plates', link: '/products/printing-ink-consumables'}
+                                          { id: 'hdit4', name: 'CTP Plates', link: '/product/printing-ink-consumables/printing-plates'},
+                                          { id: 'hyrt', name: 'CTCP Plates', link: '/product/printing-ink-consumables/printing-plates'}
                                   ],
-                                  link: '/products/printing-ink-consumables'
+                                  link: '/product/printing-ink-consumables/printing-plates'
                               }
                     ],
                     subcategory: [],
-                    link: '/products/printing-ink-consumables'
+                    link:'/product/printing-ink-consumables/printing-plates'
                },
                {
                    id: 'hsofusodj',
                    subtext: 'Lamination Films',
                    subcategories: [],
                    subcategory: [
-                             { id: 'khdfos', name: 'Hot Lamination Thermal Roll Films - Gloss', link: '/products/printing-ink-consumables'},
-                             { id: 'kuodfss', name: 'Hot Lamination Thermal Roll Films - Mat', link: '/products/printing-ink-consumables'}
+                             { id: 'khdfos', name: 'Hot Lamination Thermal Roll Films - Gloss', link: '/product/printing-ink-consumables/lamination-films'},
+                             { id: 'kuodfss', name: 'Hot Lamination Thermal Roll Films - Mat', link: '/product/printing-ink-consumables/lamination-films'}
                    ],
-                   link: '/products/printing-ink-consumables'
+                   link: '/product/printing-ink-consumables/lamination-films'
                }
          ],
          submenu3: []
@@ -137,37 +137,37 @@ export const menuData = [
                      {
                             id: '4dfusd',
                             name: 'Press Washes',
-                            subcategories: [ { id: 'ndufos', name: 'Atece Galaxy Wash', link: '/products/pressroom-chemicals'}]
+                            subcategories: [ { id: 'ndufos', name: 'Atece Galaxy Wash', link:  '/product/pressroom-chemicals/press-washes'}]
                      },
                      {
                            id: 'nhdfso',
                            name: 'Fountain Solutions',
                            subcategories: [
-                                 { id: 'nsljfou', name: 'Atece Galaxy Fountain Solution', link: '/products/pressroom-chemicals'},
-                                 { id: 'n34fou', name: 'Atece Galaxy Web Fountain Solution', link: '/products/pressroom-chemicals'},
+                                 { id: 'nsljfou', name: 'Atece Galaxy Fountain Solution', link: '/product/pressroom-chemicals/fountain-solutions'},
+                                 { id: 'n34fou', name: 'Atece Galaxy Web Fountain Solution', link: '/product/pressroom-chemicals/fountain-solutions'},
                            ]
                      },
                      {
                          id: 'dhfsou5',
                          name: 'Press Additives',
                          subcategories: [
-                                  { id: 'nndlfu', name: "Ink Reducer", link: '/products/pressroom-chemicals'},
-                                  { id: 'nn48u', name: "Spray Powder", link: '/products/pressroom-chemicals'},
-                                  { id: 'nndy4os', name: "Blanket Repair Kit", link: '/products/pressroom-chemicals'},
+                                  { id: 'nndlfu', name: "Ink Reducer", link: '/product/pressroom-chemicals/press-additives'},
+                                  { id: 'nn48u', name: "Spray Powder", link: '/product/pressroom-chemicals/press-additives'},
+                                  { id: 'nndy4os', name: "Blanket Repair Kit", link: '/product/pressroom-chemicals/press-additives'},
                          ]
                      },
                      {
                          id: 'nhsf430',
                          name: 'Plate Cleaners',
                          subcategories: [
-                                { id: 'ndlf349', name: 'Atece Galaxy Plate Cleaner', link: '/products/pressroom-chemicals'},
-                                { id: 'nydfuou', name: 'Atece Galaxy Plate Gum', link: '/products/pressroom-chemicals'},
+                                { id: 'ndlf349', name: 'Atece Galaxy Plate Cleaner', link: '/product/pressroom-chemicals/plate-cleaners'},
+                                { id: 'nydfuou', name: 'Atece Galaxy Plate Gum', link: '/product/pressroom-chemicals/plate-cleaners'},
                          ]
                      },
                      {
                          id: 'ndlfsu4',
                          name: 'Specialty Washes',
-                         subcategories: [ { id: 'ndlfshu', name: 'UV Roller Wash', link: '/products/pressroom-chemicals'}]
+                         subcategories: [ { id: 'ndlfshu', name: 'UV Roller Wash', link: '/product/pressroom-chemicals'}]
                      }
            ],
            submenu3: []
@@ -181,32 +181,32 @@ export const menuData = [
                           id: 'hdfou48',
                           name: 'Banner Materials',
                           subcategories: [
-                                { id: 'ndlfh4', name: 'Black and White Banner', link: '/products/large-format'},
-                                { id: 'ndousd', name: 'Honeycomb Banner', link: '/products/large-format'},
-                                { id: 'ndlfh84', name: 'Frontlit White Banner', link: '/products/large-format'},
+                                { id: 'ndlfh4', name: 'Black and White Banner', link:  '/product/large-format/banner-materials'},
+                                { id: 'ndousd', name: 'Honeycomb Banner', link:  '/product/large-format/banner-materials'},
+                                { id: 'ndlfh84', name: 'Frontlit White Banner', link:  '/product/large-format/banner-materials'},
                           ]
                      },
                      {
                           id: 'lhflds4',
                           name: 'Vinyl',
                           subcategories: [
-                                    { id: 'nlsh452', name: 'White Vinyl', link: '/products/large-format'},
-                                    { id: 'nloi52', name: 'Clear Vinyl', link: '/products/large-format'},
-                                    { id: 'nlmjk52', name: 'One Way Vision', link: '/products/large-format'},
-                                    { id: 'nlk452', name: 'Reflective Vinyl', link: '/products/large-format'},
-                                    { id: 'nlsh4jd2', name: 'Grey Back Pet', link: '/products/large-format'},
-                                    { id: 'nlhjdd2', name: 'Honeycomb', link: '/products/large-format'},
+                                    { id: 'nlsh452', name: 'White Vinyl', link:  '/product/large-format/vinyls'},
+                                    { id: 'nloi52', name: 'Clear Vinyl', link:  '/product/large-format/vinyls'},
+                                    { id: 'nlmjk52', name: 'One Way Vision', link:  '/product/large-format/vinyls'},
+                                    { id: 'nlk452', name: 'Reflective Vinyl', link:  '/product/large-format/vinyls'},
+                                    { id: 'nlsh4jd2', name: 'Grey Back Pet', link:  '/product/large-format/vinyls'},
+                                    { id: 'nlhjdd2', name: 'Honeycomb', link:  '/product/large-format/vinyls'},
                           ]
                      },
                      {
                          id: 'nldhfu4',
                          name: 'Boards',
                          subcategories: [
-                                { id: 'nlshf42', name: 'Corex Boards', link: '/products/large-format'},
-                                { id: 'nxjdfj2', name: 'Forex Boards', link: '/products/large-format'},
-                                { id: 'nmnjs2', name: 'Aluco Bond Panels', link: '/products/large-format'},
-                                { id: 'nlshfoi42', name: 'Acryllic Sheet', link: '/products/large-format'},
-                                { id: 'nlmxjf', name: 'ABS Boards', link: '/products/large-format'},
+                                { id: 'nlshf42', name: 'Corex Boards', link: '/product/large-format/boards'},
+                                { id: 'nxjdfj2', name: 'Forex Boards', link: '/product/large-format/boards'},
+                                { id: 'nmnjs2', name: 'Aluco Bond Panels', link: '/product/large-format/boards'},
+                                { id: 'nlshfoi42', name: 'Acryllic Sheet', link: '/product/large-format/boards'},
+                                { id: 'nlmxjf', name: 'ABS Boards', link: '/product/large-format/boards'},
                          ]
                      },
                      {
@@ -222,13 +222,13 @@ export const menuData = [
                      },
                      {
                           id: 'nslh43of',
-                          name: 'Snapper Frame',
+                          name: 'Snapper Frames',
                           subcategories: [
-                               { id: 'dlsnf49', name: 'Snapper Frame A0', link: '/products/large-format'},
-                               { id: 'dpifs9', name: 'Snapper Frame A1', link: '/products/large-format'},
-                               { id: 'dluiep9', name: 'Snapper Frame A2', link: '/products/large-format'},
-                               { id: 'dlxljf9', name: 'Snapper Frame A3', link: '/products/large-format'},
-                               { id: 'dlsjxlf49', name: 'Snapper Frame A4', link: '/products/large-format'},
+                               { id: 'dlsnf49', name: 'Snapper Frame A0', link: '/product/large-format/snapper-frames'},
+                               { id: 'dpifs9', name: 'Snapper Frame A1', link: '/product/large-format/snapper-frames'},
+                               { id: 'dluiep9', name: 'Snapper Frame A2', link: '/product/large-format/snapper-frames'},
+                               { id: 'dlxljf9', name: 'Snapper Frame A3', link: '/product/large-format/snapper-frames'},
+                               { id: 'dlsjxlf49', name: 'Snapper Frame A4', link: '/product/large-format/snapper-frames'},
                           ]
                      }
            ],
@@ -240,10 +240,10 @@ export const menuData = [
           submenu: [],
           submenu2: [],
           submenu3: [
-                { id: 'nslh5s', name: 'Self Adhesive Vinyl Paper', link: '/products/paper'},
+                { id: 'nslh5s', name: 'Self Adhesive Vinyl Paper', link: '/product/paper/self-adhesive-paper'},
                 { id: 'ndndls2', name: 'Art Paper Gloss', link: '/products/paper'},
                 { id: 'n85sf2', name: 'Art Paper Matt', link: '/products/paper'},
-                { id: 'ndlfjsi5', name: 'NCR Paper', link: '/products/paper'},
+                { id: 'ndlfjsi5', name: 'NCR Paper', link: '/product/paper/ncr-paper'},
                 { id: 'ndfdjosu', name: 'Bond Paper', link: '/products/paper'},
           ]
      }

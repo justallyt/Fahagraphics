@@ -9,6 +9,8 @@ import Contact from "./pages/Contact"
 import Services from "./pages/Services"
 import Products from "./pages/Products"
 import SingleProduct from "./pages/SingleProduct"
+import SingleProduct2 from "./pages/SingleProduct2"
+
 function App() {
   const location = useLocation()
 
@@ -33,6 +35,8 @@ function App() {
                 <Route path="/products/" element={<Products />} />
                 <Route path="/contact-us/" element={<Contact />} />
                 <Route path="/product/:name" element={<SingleProduct />} />
+                <Route path='/product/:category/:name' element={<SingleProduct2 />} />
+                <Route path="/product/:category/:name/:specific" element={<SingleProduct2 />} />
     </Routes>
   )
 }

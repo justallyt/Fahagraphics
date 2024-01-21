@@ -16,7 +16,7 @@ const About = () => {
                                             <div className="body-texts-content">
                                                         <div className="body-texts-zenyewe">
                                                                   <h3 data-aos='fade-down'>About Us</h3>
-                                                                   <h1 data-aos='fade-up'>We are the largest supplier of quality ink and printing consumables in East Africa.</h1>
+                                                                   <h1 data-aos='fade-up'>We are the largest supplier of quality Printing Inks and Printing Consumables and Large Format Media in East Africa.</h1>
                                                         </div>
                                                         <div className="body-image">
                                                                    <img data-aos='zoom-in-up' src={aboutHero} alt="" />

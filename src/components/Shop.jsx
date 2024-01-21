@@ -25,16 +25,16 @@ const Shop = () => {
                                                   </div>
                                                   <div className="achievement-numbers">
                                                              <div className="achievement-moja"  data-aos='zoom-in-up'>
-                                                                        <h1>10,000+</h1>
+                                                                        <h1>1M+</h1>
                                                                         <p>Print products Supplied</p>
                                                              </div>
                                                              <div className="achievement-moja"  data-aos='zoom-in-up'>
-                                                                         <h1>20+</h1>
-                                                                         <p>Combined years of Experience</p>
+                                                                         <h1>16+</h1>
+                                                                         <p>Years of Experience</p>
                                                              </div>
                                                              <div className="achievement-moja"  data-aos='zoom-in-up'>
                                                                           <h1>50+</h1>
-                                                                          <p>Number of Ink Experts</p>
+                                                                          <p>Number of Team Members</p>
                                                              </div>
                                                   </div>
                                       </div>

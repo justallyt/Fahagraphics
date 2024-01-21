@@ -142,6 +142,10 @@ export const filterData = [
                 subfilter_header_text: 'Self Adhesive Paper'
              }
       ]
+   },
+   {
+        id: 5,
+        header_text: 'Other'
    }
 
 ]
